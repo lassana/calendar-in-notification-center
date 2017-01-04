@@ -65,7 +65,8 @@
                 </textField>
                 <button focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WC3-bb-gPS">
                     <rect key="frame" x="-2" y="113" width="39" height="38"/>
-                    <buttonCell key="cell" type="round" title="&lt;" bezelStyle="circular" alignment="center" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="etu-6H-TIe">
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="round" title="◀" bezelStyle="circular" alignment="center" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="etu-6H-TIe">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -75,7 +76,8 @@
                 </button>
                 <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d23-9S-YJm">
                     <rect key="frame" x="20" y="113" width="39" height="38"/>
-                    <buttonCell key="cell" type="round" title="&gt;" bezelStyle="circular" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yLN-cx-S05">
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="round" title="▶" bezelStyle="circular" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yLN-cx-S05">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
