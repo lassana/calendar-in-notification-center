@@ -82,7 +82,7 @@
     for (NSInteger idx = 0; idx < 7 ; idx++) {
         WSLDay* day = [[WSLDay alloc] init];
         day.date = weekday[(idx + [cal firstWeekday] - 1) % 7];
-        day.textColor = [NSColor darkGrayColor];
+        day.textColor = [NSColor secondaryLabelColor];
         [monthArray addObject:day];
     }
     
@@ -120,7 +120,7 @@
     for (NSUInteger i = 1; i <= daysThisMonth; i++) {
         WSLDay* day = [[WSLDay alloc] init];
         day.date = [nf stringFromNumber:@(i)];
-        day.textColor = (i == today) ? [NSColor greenColor] : [NSColor whiteColor];
+        day.textColor = (i == today) ? [NSColor colorWithRed:0.78 green:0.0 blue:0 alpha:1.0] : [NSColor textColor];
         [monthArray addObject:day];
     }
     
@@ -135,7 +135,7 @@
     for (NSInteger i = 0; i < totalCount; i++) {
         WSLDay* day = [[WSLDay alloc] init];
         day.date = [nf stringFromNumber:@(i + 1)];
-        day.textColor = [NSColor lightGrayColor];
+        day.textColor = [NSColor quaternaryLabelColor];
         [monthArray addObject:day];
         current = [cal dateByAddingComponents:addDay toDate:current options:0];
     }
