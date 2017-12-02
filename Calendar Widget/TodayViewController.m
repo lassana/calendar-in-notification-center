@@ -18,7 +18,7 @@
 @property (nonatomic, strong) IBOutlet NSCollectionView* collectionView;
 @property (strong) IBOutlet NSLayoutConstraint *collectionViewHeightConstraint;
 
-@property (nonatomic, strong) IBOutlet NSTextField* dateLabel;
+@property (nonatomic, strong) IBOutlet NSButton *dateButton;
 
 @property (nonatomic, strong) NSDate* displayDate;
 
@@ -33,18 +33,19 @@
 -(void)awakeFromNib {
     // Setup view
     self.collectionView.backgroundColors = @[ [NSColor clearColor] ];
-
+    //self.dateButton.bordered = false;
+    
     // Initialise date
     self.displayDate = [[NSDate date] wsl_beginningOfMonth];
     [self updateCalendar:self.displayDate];
-    [self updateDateLabel:self.displayDate];
+    [self updateSubtitle:self.displayDate];
 }
 
-- (void)updateDateLabel:(NSDate*) date {
+- (void)updateSubtitle:(NSDate*) date {
     NSString* dateFormatString = [NSDateFormatter dateFormatFromTemplate:@"MMMMyyyy" options:0 locale:[NSLocale currentLocale]];
     NSDateFormatter* df = [[NSDateFormatter alloc] init];
     df.dateFormat = dateFormatString;
-    [self.dateLabel setStringValue:[df stringFromDate:date]];
+    [self.dateButton setTitle:[df stringFromDate:date]];
 }
 
 - (void)updateCalendar:(NSDate*)date {
@@ -150,7 +151,7 @@
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult result))completionHandler {
     self.displayDate = [[NSDate date] wsl_beginningOfMonth];
     [self updateCalendar:self.displayDate];
-    [self updateDateLabel:self.displayDate];
+    [self updateSubtitle:self.displayDate];
     
     completionHandler(NCUpdateResultNoData);
 }
@@ -175,7 +176,7 @@
         if (newDate) {
             self.displayDate = newDate;
             [self updateCalendar:self.displayDate];
-            [self updateDateLabel:self.displayDate];
+            [self updateSubtitle:self.displayDate];
         }
     }
 }
@@ -189,7 +190,7 @@
     if (newDate) {
         self.displayDate = newDate;
         [self updateCalendar:self.displayDate];
-        [self updateDateLabel:self.displayDate];
+        [self updateSubtitle:self.displayDate];
     }
 }
 
@@ -202,10 +203,15 @@
     if (newDate) {
         self.displayDate = newDate;
         [self updateCalendar:self.displayDate];
-        [self updateDateLabel:self.displayDate];
+        [self updateSubtitle:self.displayDate];
     }
 }
 
+- (IBAction)showCurrentMonth:(id)sender {
+    self.displayDate = [NSDate date];
+    [self updateCalendar:self.displayDate];
+    [self updateSubtitle:self.displayDate];
+}
 
 @end
 
