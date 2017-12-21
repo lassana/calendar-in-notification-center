@@ -1,34 +1,26 @@
 # Calendar
 
-This is a fork of Calendar:
-https://github.com/sdarlington/Calendar
+Based on https://github.com/szhu/calendar-in-notification-center and https://github.com/sdarlington/Calendar .
 
-This widget show a full month calendar in your Notification Center. It's simple, with no options. It uses your locale to determine whether your week starts on a Sunday or monday.
+A simple calendar Notification Center widget for macOS. Tested on Sierra 10.12. It uses your locale to determine whether your week starts on a Sunday or Monday.
 
-<!-- ![Screen shot](https://raw.githubusercontent.com/sdarlington/Calendar/images/today-widget.png) -->
-
-![Screen Shot](http://i.imgur.com/W93dFZs.png?1)
+![Screen Shot](https://i.imgur.com/ahpRIb2.png)
 
 ## User Guide
 
 - Use the arrow buttons to go previous month or next month.
 - Swipe up and down to go to the next and previous month.
-- Swipe left to go back to the current month.
-
+- Swipe left or press the title to go back to the current month.
 
 ## Installation
 
-
 ### Option 1:
 
-Download the [following zip file](https://www.dropbox.com/s/7323tq5g6vme5cq/Calendar-Widget2.zip?dl=0) and double click the `Calendar.app`.
-
-
+Download the zip file from the [Releases](https://github.com/lassana/calendar-in-notification-center/releases) page, extract it and double click the `Calendar.app`.
 
 ### Option 2:
 
 Build the app and save it somewhere safe (not in the Application's folder, since you probably don't want to overwrite Apple's Calendar app!). Then you can add the "This Month" widget to your Notification Center.
-
 
 ## License
     Calendar
