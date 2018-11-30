@@ -21,6 +21,7 @@
 		C419D7F21A602A9D0023553C /* WSLDay.m in Sources */ = {isa = PBXBuildFile; fileRef = C419D7F11A602A9D0023553C /* WSLDay.m */; };
 		C4400BA11A61C6D9006C5099 /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = C4400B9F1A61C6D9006C5099 /* NSArray+Functional.m */; };
 		C4400BAA1A642ACD006C5099 /* NSDate+WSL.m in Sources */ = {isa = PBXBuildFile; fileRef = C4400BA91A642ACD006C5099 /* NSDate+WSL.m */; };
+		CE5B4EF421B1D5DA001A61FF /* ThemedColor.ssxcassets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5B4EF321B1D5DA001A61FF /* ThemedColor.ssxcassets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		C4400BA01A61C6D9006C5099 /* NSArray+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Functional.h"; sourceTree = "<group>"; };
 		C4400BA81A642ACD006C5099 /* NSDate+WSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WSL.h"; sourceTree = "<group>"; };
 		C4400BA91A642ACD006C5099 /* NSDate+WSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WSL.m"; sourceTree = "<group>"; };
+		CE5B4EF321B1D5DA001A61FF /* ThemedColor.ssxcassets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemedColor.ssxcassets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				C419D7F01A602A9D0023553C /* WSLDay.h */,
 				C419D7F11A602A9D0023553C /* WSLDay.m */,
 				C419D7DE1A6029E80023553C /* Supporting Files */,
+				CE5B4EF321B1D5DA001A61FF /* ThemedColor.ssxcassets.xcassets */,
 			);
 			path = "Calendar Widget";
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			files = (
 				C419D7E81A6029E80023553C /* TodayViewController.xib in Resources */,
 				C419D7E31A6029E80023553C /* InfoPlist.strings in Resources */,
+				CE5B4EF421B1D5DA001A61FF /* ThemedColor.ssxcassets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
