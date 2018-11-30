@@ -2,9 +2,9 @@
 
 Based on https://github.com/szhu/calendar-in-notification-center and https://github.com/sdarlington/Calendar .
 
-A simple calendar Notification Center widget for macOS. Tested on Sierra 10.12. It uses your locale to determine whether your week starts on a Sunday or Monday.
+A simple calendar Notification Center widget for macOS. Tested on Mojave 10.14. It uses your locale to determine whether your week starts on a Sunday or Monday.
 
-![Screen Shot](https://i.imgur.com/ahpRIb2.png)
+![Screen Shot](mojave.png)
 
 ## User Guide
 
